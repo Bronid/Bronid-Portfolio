@@ -6,9 +6,9 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
         $(function() {
-           $("#includeHeader").load("header.html");
-           $("#includeFooter").load("footer.html");
-           $("#includeForm").load("projectForm.html");
+            $("#includeHeader").load("../content/header.html");
+            $("#includeFooter").load("../content/footer.html");
+            $("#includeForm").load("projectForm.html");
         });
      </script>
   </head>
@@ -25,19 +25,19 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..\images\test.png" class="d-block w-100" alt="...">
+            <img src="..\..\images\test.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..\images\test.png" class="d-block w-100" alt="...">
+            <img src="..\..\images\test.png" class="d-block w-100" alt="...">
           </div>  
           <div class="carousel-item">
-            <img src="..\images\test.png" class="d-block w-100" alt="...">
+            <img src="..\..\images\test.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..\images\test.png" class="d-block w-100" alt="...">
+            <img src="..\..\images\test.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..\images\test.png" class="d-block w-100" alt="...">
+            <img src="..\..\images\test.png" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -50,12 +50,36 @@
         </button>
       </div>
 
-      <h1>Projects</h1>
-
       <div class="container-fluid mt-5">
         <div class="row g-2">
           <div id="includeForm"></div>
           <div id="includeForm"></div>
+
+          <div class="col-3">
+            <div class="p-3">
+              <div class="card">
+                <img src="images/products/Rozetka.png" class="card-img-top mt-2" alt="...">
+                <div class="card-body">
+                  <h5 class="product-title text-center">TESSAN Listwa Zasilająca</h5>
+                  <div class="row align-items-center mt-3">
+                    <div class="col">
+                      <div class="p-2 text-start">
+                        <p class="card-text product-price">70,00zł</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="p-2 text-end">
+                        <a href="https://github.com/Radusya/ConsolePoker" target="_blank" tabindex="-1"
+                        class="btn-sm btn-cart text-white"><img class="nav-ico-1" src="images/icons/cart.png"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
         </div>
       </div>
 
