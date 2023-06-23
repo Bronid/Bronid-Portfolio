@@ -10,19 +10,45 @@
             $("#includeFooter").load("../content/footer.html");
         });
      </script>
+     <style>
+      .person-container {
+        display: flex;
+        align-items: center;
+      }
+  
+      .person-image {
+        width: 200px;
+        height: auto;
+        margin-right: 20px;
+      }
+  
+      .person-description {
+        font-size: 18px;
+      }
+    </style>
   </head>
 
 <body>
   <div class="wrapper">
     <div id="includeHeader"></div>
-    <h1 class="text-center">About Me</h1>
-  <p class="text-center">Hello! My name is Bohdan, I am a software engineer from a small town in Ukraine. I started my programming journey at the age of 15, learning Java and C++.</p>
-  <p class="text-center">When I turned 17, I moved to Poland to live, study, and work there. I am grateful for the opportunity to reside in this beautiful country and benefit from its educational resources.</p>
-  <p class="text-center">Currently, I am focused on expanding my programming skills and exploring new things. Continuous learning and trying out new technologies are crucial to me.</p>
-  <p class="text-center">Outside of work as a programmer, I have various hobbies that allow me to disconnect from the computer and find joy in other aspects of life. One of my main interests is Warhammer 40k, an intriguing tabletop wargame set in a futuristic universe. I also enjoy playing airsoft, board games, and Dungeons & Dragons. Computer games are also a part of my life, allowing me to explore virtual worlds and connect with fellow gamers online.</p>
-  <p class="text-center">Through years of work and education, I have gained valuable experience that helps me better understand the world of programming and technology. I am open to new challenges and ready to take on new projects. I strive for continuous growth and expanding my knowledge.</p>
-  <p class="text-center">I am excited about the prospects of further professional development and meeting new people in this dynamic field. If you have any questions or are interested in collaborating, feel free to reach out to me. I am happy to share my passion and skills with fellow software enthusiasts.</p>
-    <div id="external"></div>
+    <div class="person-container mt-5">
+      <img src="../../images/bohdanstetskyi.jpg" alt="Person Image" class="person-image">
+      <div class="person-description">
+        <h2>Bohdan Stetskyi</h2>
+        <p>
+          Hello! My name is Bohdan, a software engineer from a small town in Ukraine. I started my programming journey at the age of 15, learning Java and C++.
+          When I turned 17, I moved to Poland to live, study, and work there. I am grateful for the opportunity to reside in this beautiful country and benefit from its educational resources.
+          Currently, I am focused on expanding my programming skills and exploring new things. Continuous learning and trying out new technologies are crucial to me.
+        </p>
+        <p>
+          Outside of work as a programmer, I have various hobbies that allow me to disconnect from the computer and find joy in other aspects of life. One of my main interests is Warhammer 40k, an intriguing tabletop wargame set in a futuristic universe. I also enjoy playing airsoft, board games, and Dungeons & Dragons. Computer games are also a part of my life, allowing me to explore virtual worlds and connect with fellow gamers online.
+        </p>
+        <p>
+          Through years of work and education, I have gained valuable experience that helps me better understand the world of programming and technology. I am open to new challenges and ready to take on new projects. I strive for continuous growth and expanding my knowledge.
+          I am excited about the prospects of further professional development and meeting new people in this dynamic field. If you have any questions or are interested in collaborating, feel free to reach out to me. I am happy to share my passion and skills with fellow software enthusiasts.
+        </p>
+      </div>
+    </div>
   </div>
     <div id="includeFooter"></div>
 </body>

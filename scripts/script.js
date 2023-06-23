@@ -1,13 +1,3 @@
-function contactsFix() {
-    if(document.querySelector('.navbar-toggler').value == "dropped"){
-        document.querySelector('.con').className = "nav-link text-white me-5 con";
-        document.querySelector('.navbar-toggler').value = "none";
-    } else {
-        document.querySelector('.con').className = "btn btn-info text-white con";
-        document.querySelector('.navbar-toggler').value = "dropped";
-    } 
-};
-
 function validateForm() {
     var succesful = true;
     document.querySelector('.name').innerHTML = "Your name";
@@ -57,3 +47,20 @@ function validateForm() {
         myModal.toggle()
     }
 };
+
+function calculateTotal() {
+    var graphicDesignRate = 28;
+    var managementRate = 40;
+    var programmingRate = 35;
+    var testerRate = 30;
+
+    var hoursGraphicDesign = parseFloat(document.getElementById("hoursGraphicDesign").value);
+    var hoursManagement = parseFloat(document.getElementById("hoursManagement").value);
+    var hoursProgramming = parseFloat(document.getElementById("hoursProgramming").value);
+    var hoursTesting = parseFloat(document.getElementById("hoursTester").value);
+
+    var total = (graphicDesignRate * hoursGraphicDesign) + (managementRate * hoursManagement) + (programmingRate * hoursProgramming)
+    + (testerRate * hoursTesting);
+
+    document.getElementById("total").innerHTML = "Sum: zł " + total.toFixed(2);
+  };

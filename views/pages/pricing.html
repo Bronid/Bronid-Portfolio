@@ -14,28 +14,10 @@
            $("#includeFooter").load("../content/footer.html");
         });
     </script>
-
-<script>
-    function calculateTotal() {
-      var graphicDesignRate = 28;
-      var managementRate = 40;
-      var programmingRate = 35;
-      var testerRate = 30;
-
-      var hoursGraphicDesign = parseFloat(document.getElementById("hoursGraphicDesign").value);
-      var hoursManagement = parseFloat(document.getElementById("hoursManagement").value);
-      var hoursProgramming = parseFloat(document.getElementById("hoursProgramming").value);
-      var hoursTesting = parseFloat(document.getElementById("hoursTester").value);
-
-      var total = (graphicDesignRate * hoursGraphicDesign) + (managementRate * hoursManagement) + (programmingRate * hoursProgramming)
-      + (testerRate * hoursTesting);
-
-      document.getElementById("total").innerHTML = "Sum: zł " + total.toFixed(2);
-    }
-  </script>
-
 </head>
+
 <body>
+    <div class="wrapper">
     <div id="includeHeader"></div>
     <h4 class="text-center mt-5">Pricing by hour</h4>
 
@@ -82,7 +64,7 @@
       </div>
   
     <p class="text-center" id="total">Sum: zł 0.00</p>
-
+</div>
     <div id="includeFooter"></div>
 </body>
 </html>
